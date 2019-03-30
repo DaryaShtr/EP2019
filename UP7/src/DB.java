@@ -18,9 +18,11 @@ import javax.swing.JOptionPane;
 
 class ShopItem {
 	int number;
+        String name;
 	String adress;
-	ShopItem( int number, String adress) {
+	ShopItem( int number, String name, String adress) {
 		this.number = number;
+                this.name = name;
 		this.adress = adress;
 	}
 }
@@ -64,7 +66,7 @@ public class DB {
 			Connection conn = DriverManager.getConnection(connect);
 			// Выполняем запросы 
 			Statement st = conn.createStatement();
-			st.executeUpdate("CREATE TABLE Shop " + "(Number INT PRIMARY KEY, Adress VARCHAR(32))");
+			st.executeUpdate("CREATE TABLE Shop " + "(Number INT PRIMARY KEY,Name VARCHAR(32), Adress VARCHAR(32))");
 			st.executeUpdate("CREATE TABLE Technik " + "(Number INT REFERENCES Shop(Number) , Producer VARCHAR(32), Kind VARCHAR(32), Model VARCHAR(32) PRIMARY KEY)");
 			st.executeUpdate("CREATE TABLE Information " + "(Model VARCHAR(32) REFERENCES Technik(Model), Price DOUBLE, Warranty DOUBLE)");
 			st.close();
@@ -74,7 +76,7 @@ public class DB {
 		}
     }
     
-    static String shopIns = "INSERT INTO Shop(Number, Adress) VALUES(?,?)";
+    static String shopIns = "INSERT INTO Shop(Number, Name, Adress) VALUES(?,?,?)";
     static String technikIns = "INSERT INTO Technik(Number, Producer, Kind, Model) VALUES(?,?,?,?)";
     static String infoIns = "INSERT INTO Information(Model, Price, Warranty) VALUES(?,?,?)";
 	
@@ -95,6 +97,7 @@ public class DB {
                     try {
                         st.setInt( 1,  Integer.parseInt(mas[0]));
                         st.setString( 2, mas[1]);
+                        st.setString(3, mas[2]);
                         st.executeUpdate();
                         } catch (SQLException e) {
                             JOptionPane.showMessageDialog(null, e);
