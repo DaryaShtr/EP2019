@@ -9,7 +9,7 @@ public class MudClient {
 
     /**
      * The main program.  It expects two or three arguments:
-     *   0) the name of the host on which the mud server is running (for example "Vadimka-PC")
+     *   0) the name of the host on which the mud server is running (for example "DESKTOP-STO08K7")
      *   1) the name of the MUD on that host (for example "myMud")
      *   2) the name of a room within that MUD to start at (optional, for example "Room1").
      **/

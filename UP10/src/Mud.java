@@ -65,6 +65,6 @@ public class Mud {
         public RoomAlreadyExists() { super.msg = "There is already a room with that name."; }
     }
 
-    public static final String mudPrefix = "lisay.vadim.tictactoe.rmi.";
+    public static final String mudPrefix = ".rmi.";
 
 }
