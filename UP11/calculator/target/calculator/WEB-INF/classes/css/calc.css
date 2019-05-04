@@ -1,0 +1,50 @@
+#input {
+    height: 30px;
+    width: 250px;
+    font-size: 30px;
+    margin: 15px;
+    border: none;
+    border-radius: 2px;
+    color: #55ACEE;
+    padding: 5px;
+}
+
+#result {
+    height: 30px;
+    padding: 5px;
+    font-size: 30px;
+    min-width: 150px;
+    margin: 15px;
+    background: white;
+    border-radius: 2px;
+}
+
+body {
+    height: 500px;
+    background: #86CCE4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bttn {
+    border-radius: 2px;
+    border: none;
+    padding: 5px 15px;
+    background: #55ACEE;
+    font-size: 15px;
+    color: #595959;
+    transition-duration: 0.15s;
+}
+
+#bttn:active {
+    transition-duration: 0.15s;
+    background: #86CCE4;
+}
