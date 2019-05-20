@@ -1,0 +1,10 @@
+bsu.fpmi.educational_practice2019.KeyValues
+bsu.fpmi.educational_practice2019.MySpecComponent$5
+bsu.fpmi.educational_practice2019.ButtonValues
+bsu.fpmi.educational_practice2019.LabelValues
+bsu.fpmi.educational_practice2019.MySpecComponent$4
+bsu.fpmi.educational_practice2019.RadioButtonValues
+bsu.fpmi.educational_practice2019.MySpecComponent$3
+bsu.fpmi.educational_practice2019.MySpecComponent$2
+bsu.fpmi.educational_practice2019.MySpecComponent$1
+bsu.fpmi.educational_practice2019.MySpecComponent
